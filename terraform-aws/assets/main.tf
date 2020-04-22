@@ -3,8 +3,20 @@ resource "aws_vpc" "example" {
   cidr_block = "10.0.0.0/16"
 }
 
+resource "tls_private_key" "this" {
+  algorithm = "RSA"
+}
+
+module "key_pair" {
+  source = "terraform-aws-modules/key-pair/aws"
+
+  key_name   = "deployer-one"
+  public_key = tls_private_key.this.public_key_openssh
+}
+
 # Create ec2 instance
 resource "aws_instance" "example" {
+  key_name      = module.key_pair.this_key_pair_key_name
   ami           = "ami-2757f631"
   instance_type = "t2.micro"
 
