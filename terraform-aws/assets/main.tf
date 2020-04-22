@@ -9,3 +9,8 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
 }
 
+# Assigning an Elastic IP
+resource "aws_eip" "ip" {
+    vpc = true
+    instance = aws_instance.example.id
+}
