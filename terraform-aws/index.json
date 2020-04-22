@@ -1,7 +1,7 @@
 {
   "title": "Terraform Tutorial on AWS (emulated with localstack)",
   "description": "A 60 second Terraform tutorial with just the basics",
-  "time": 40,
+  "time": 5,
   "icon": "fa-terraform",
   "details": {
     "intro": {
