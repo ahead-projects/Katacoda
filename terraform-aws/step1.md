@@ -6,7 +6,7 @@ First, look the content of the `main.tf` file
 
 `cat main.tf`{{execute}}
 
-You don't have to edit the code. It defines two resources: a Docker disk image that packages the Nginx webserver, and a Docker container that gives it a name and runs it on port 80.
+You don't have to edit the code. It defines two resources: vpc and ec2 instance
 
 ## Init
 
@@ -24,13 +24,14 @@ You will be asked to confirm. Type `yes` and press `ENTER`. It may take up to 30
 
 ## Verify
 
-Visit this URL to view the default Nginx web page which is now live:
+Visit this URL to view the default localstack web page which is now live:
 
-- [Nginx index page](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/)
+- [Nginx index page](https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/)
 
-Alternatively, you can examine Docker's process list. You will see the `tutorial` container which is running Nginx.
+Alternatively, you can examine resource list.
 
-`docker ps`{{execute}}
+`terraform show`{{execute}}
+`terraform state list`{{execute}}
 
 ## Destroy
 
@@ -44,4 +45,4 @@ You will be prompted to confirm. Type `yes` and press `ENTER`.
 
 You have now created and destroyed your first Terraform resources! Terraform supports hundreds of ecosystem providers, from major cloud resources to content delivery networks and more.
 
-Continue learning at [HashiCorp Learn](https://learn.hashicorp.com/terraform) and the [Terraform API documentation](https://www.terraform.io/) or discuss with others on the [Terraform forum](https://discuss.hashicorp.com/c/terraform-core/27).
+Continue learning at [Ahead Learn](https://www.katacoda.com/ahead) and the [Terraform API documentation](https://www.terraform.io/) or discuss with others on the [Terraform forum](https://discuss.hashicorp.com/c/terraform-core/27).
