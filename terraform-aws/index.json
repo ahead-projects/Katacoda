@@ -41,8 +41,8 @@
     "showdashboard": true,
     "dashboards": [
       {
-        "name": "Nginx",
-        "port": 80
+        "name": "localstack",
+        "port": 8080
       }
     ]
   }
