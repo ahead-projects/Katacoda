@@ -20,3 +20,4 @@ install_zip "terraform" "https://releases.hashicorp.com/terraform/0.12.24/terraf
 # main
 mkdir -p ~/terraform-docker-demo
 cd ~/terraform-docker-demo
+terraform version
