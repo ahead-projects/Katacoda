@@ -1,0 +1,39 @@
+{
+  "title": "Packer Tutorial",
+  "description": "A 60 second Packer tutorial with just the basics",
+  "time": 1,
+  "icon": "fa-packer",
+  "details": {
+    "intro": {
+        "text": "intro.md",
+        "code": "courseBase.sh",
+        "credits": "https://www.katacoda.com/ahead"
+    },
+    "steps": [
+      {
+        "title": "Packer in 60 Seconds",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md",
+      "credits": "https://www.katacoda.com/ahead"
+    },
+    "assets": {
+      "host01": [
+        { "file": "packer.json", "target": "~/packer-demo" }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands version 0.1.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu",
+    "showdashboard": true,
+    "dashboards": [
+      { "name": "Nginx", "port": 80 }
+    ]
+  }
+}
