@@ -18,8 +18,10 @@ install_zip()
 install_zip "terraform" "https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip"
 
 # localstack
+curl -L https://raw.githubusercontent.com/localstack/localstack/master/docker-compose.yml -o docker-compose.yml
 docker-compose up -d
+rm -f docker-compose.yml
 
 # main
-mkdir -p ~/terraform-docker-demo
-cd ~/terraform-docker-demo
+mkdir -p ~/terraform-aws-demo
+cd ~/terraform-aws-demo
