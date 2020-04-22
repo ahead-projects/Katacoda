@@ -2,11 +2,11 @@ A Terraform configuration is a series of code blocks that define your intended i
 
 ## View code
 
-First, open the `main.tf` file in the text editor by clicking this link.
+First, look the content of the `main.tf` file 
 
-`terraform-docker-demo/main.tf`{{open}}
+`cat main.tf`{{execute}}
 
-You don't have to edit or even understand the code. It defines two resources: a Docker disk image that packages the Nginx webserver, and a Docker container that gives it a name and runs it on port 80.
+You don't have to edit the code. It defines two resources: a Docker disk image that packages the Nginx webserver, and a Docker container that gives it a name and runs it on port 80.
 
 ## Init
 
