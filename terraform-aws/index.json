@@ -5,9 +5,9 @@
   "icon": "fa-terraform",
   "details": {
     "intro": {
-        "text": "intro.md",
-        "code": "courseBase.sh",
-        "credits": "https://www.katacoda.com/ahead"
+      "text": "intro.md",
+      "code": "courseBase.sh",
+      "credits": "https://www.katacoda.com/ahead"
     },
     "steps": [
       {
@@ -21,9 +21,18 @@
     },
     "assets": {
       "host01": [
-        { "file": "main.tf", "target": "~/terraform-docker-demo" },
-        { "file": "docker-compose.yml", "target": "~/terraform-docker-demo" },
-        { "file": "provider.tf", "target": "~/terraform-docker-demo" },
+        {
+          "file": "main.tf",
+          "target": "~/terraform-docker-demo"
+        },
+        {
+          "file": "docker-compose.yml",
+          "target": "~/terraform-docker-demo"
+        },
+        {
+          "file": "provider.tf",
+          "target": "~/terraform-docker-demo"
+        }
       ]
     }
   },
@@ -35,7 +44,10 @@
     "imageid": "ubuntu",
     "showdashboard": true,
     "dashboards": [
-      { "name": "Nginx", "port": 80 }
+      {
+        "name": "Nginx",
+        "port": 80
+      }
     ]
   }
 }
