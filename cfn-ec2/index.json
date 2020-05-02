@@ -1,8 +1,8 @@
 {
-  "title": "Terraform Tutorial on AWS (emulated with localstack)",
-  "description": "A 60 second Terraform tutorial with just the basics",
+  "title": "Cloudformation Tutorial on AWS (emulated with localstack)",
+  "description": "A 2 minutes AWS Cloudformation tutorial with just the basics",
   "time": 5,
-  "icon": "fa-terraform",
+  "icon": "fa-aws",
   "details": {
     "intro": {
       "text": "intro.md",
