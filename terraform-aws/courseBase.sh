@@ -26,6 +26,6 @@ rm -f docker-compose.yml
 pip install awscli-plugin-endpoint
 
 # main
-mkdir ~/.aws
+mkdir -p ~/.aws
 mkdir -p ~/terraform-aws-demo
 cd ~/terraform-aws-demo
