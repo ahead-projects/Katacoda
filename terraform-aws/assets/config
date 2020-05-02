@@ -2,7 +2,7 @@
 endpoint = awscli_plugin_endpoint
 
 # https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html
-[profile default]
+[profile localstack]
 apigateway =
     endpoint_url = http://localhost:4567
 kinesis =
