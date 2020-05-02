@@ -22,6 +22,10 @@ curl -L https://raw.githubusercontent.com/localstack/localstack/master/docker-co
 docker-compose up -d
 rm -f docker-compose.yml
 
+# install awscli-plugin-endpoint
+pip install -y awscli-plugin-endpoint
+
 # main
+mkdir ~/.aws
 mkdir -p ~/terraform-aws-demo
 cd ~/terraform-aws-demo

@@ -28,6 +28,14 @@
         {
           "file": "provider.tf",
           "target": "~/terraform-aws-demo"
+        },
+        {
+          "file": "config",
+          "target": "~/.aws/config"
+        },
+        {
+          "file": "credentials",
+          "target": "~/.aws/credentials"
         }
       ]
     }
