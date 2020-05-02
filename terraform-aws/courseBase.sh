@@ -23,7 +23,7 @@ docker-compose up -d
 rm -f docker-compose.yml
 
 # install awscli-plugin-endpoint
-pip install -y awscli-plugin-endpoint
+pip install awscli-plugin-endpoint
 
 # main
 mkdir ~/.aws
