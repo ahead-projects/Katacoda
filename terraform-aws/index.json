@@ -31,11 +31,11 @@
         },
         {
           "file": "config",
-          "target": "~/.aws/config"
+          "target": "~/.aws"
         },
         {
           "file": "credentials",
-          "target": "~/.aws/credentials"
+          "target": "~/.aws"
         }
       ]
     }
