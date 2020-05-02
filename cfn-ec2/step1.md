@@ -8,9 +8,12 @@ First, look the content of the `EC2InstanceWithSecurityGroupSample.template` fil
 
 `more EC2InstanceWithSecurityGroupSample.template`{{execute}}
 
+Press `space bar` to go to next page.
+Press `q` to quit
+
 You don't have to edit the code. It defines two resources: ec2 instance and its security group
 
-[the whole template anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html) has several sessions, only resources is required, the rest are all optional.
+[The whole template anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html) has several sessions, only resources is required, the rest are all optional.
 
 ```
 {
@@ -49,7 +52,7 @@ You don't have to edit the code. It defines two resources: ec2 instance and its 
 ```
 Mostly The template has 3 main sessions: `Parameters`, `Resources`, `Outputs`,
 
-## create keypair
+## Create keypair
 
 This template need an existing EC2 KeyPair to enable SSH access to the instance
 
@@ -57,7 +60,7 @@ This template need an existing EC2 KeyPair to enable SSH access to the instance
 
 ## Create stack
 
-nit` command. Terraform searches the configuration for both direct and indirect references to providers (such as Docker). Terraform then attempts to load the required plugins.
+Now we are ready to create the stack via cloudformaiton template
 
 `aws cloudformation create-stack --stack-name my-stack --template-body file://EC2InstanceWithSecurityGroupSample.template --parameters ParameterKey=KeyName,ParameterValue=MyKeyPair`{{execute}}
 
@@ -71,9 +74,9 @@ nit` command. Terraform searches the configuration for both direct and indirect 
 
 ## Update stack
 
-Now update instance type to t2.small
+Now update instance type to t2.medium
 
-`aws cloudformation create-stack --stack-name my-stack --template-body file://EC2InstanceWithSecurityGroupSample.template --parameters ParameterKey=KeyName,ParameterValue=MyKeyPair --parameters ParameterKey=InstanceType,ParameterValue=t2.small`{{execute}}
+`aws cloudformation update-stack --stack-name my-stack --template-body file://EC2InstanceWithSecurityGroupSample.template --parameters ParameterKey=KeyName,ParameterValue=MyKeyPair ParameterKey=InstanceType,ParameterValue=t2.medium`{{execute}}
 
 ## Verify
 
