@@ -64,9 +64,17 @@ Now we are ready to create the stack via cloudformaiton template
 
 `aws cloudformation create-stack --stack-name my-stack --template-body file://EC2InstanceWithSecurityGroupSample.template --parameters ParameterKey=KeyName,ParameterValue=MyKeyPair`{{execute}}
 
-## verify
+## Verify
+
+Describe created cloudfomraiton stack
+
+`aws cloudformation describe-stacks`{{execute}}
+
+Describe created ec2 instance
 
 `aws ec2 describe-instances`{{execute}}
+
+Confirm the setting in ec2 instance
 
 `aws ec2 describe-instances |jq .Reservations[].Instances[].KeyName`{{execute}}
 
@@ -87,6 +95,10 @@ Now update instance type to t2.medium
 To remove the stack, run the delete-stack command.
 
 `aws cloudformation delete-stack --stack-name my-stack`{{execute}}
+
+Check if this stack is still exist
+
+`aws cloudformation describe-stacks`{{execute}}
 
 ## Conclusion
 
