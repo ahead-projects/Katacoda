@@ -11,7 +11,7 @@
     },
     "steps": [
       {
-        "title": "Terraform in 60 Seconds",
+        "title": "Cloudformation in 2 minutes",
         "text": "step1.md"
       }
     ],

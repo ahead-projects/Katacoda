@@ -1,3 +1,3 @@
-# Terraform in 60 Seconds
+# Cloudformation in 2 minutes
 
-Learn more about Terraform and the rich ecosystem of providers at [Ahead Learn](https://www.katacoda.com/ahead)
+Learn more about Cloudformation at [Ahead Learn](https://www.katacoda.com/ahead)
