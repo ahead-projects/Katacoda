@@ -14,6 +14,10 @@ All Terraform workflows start with the `init` command. Terraform searches the co
 
 `terraform init`{{execute}}
 
+## Dry run
+
+`terraform plan`{{execute}}
+
 ## Apply
 
 Now provision the webserver by running `apply`.
