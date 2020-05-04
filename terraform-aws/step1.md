@@ -6,7 +6,7 @@ First, look the content of the `main.tf` file
 
 `cat main.tf`{{execute}}
 
-You don't have to edit the code. It defines two resources: vpc and ec2 instance
+You don't have to edit the code. It defines several resources: vpc, ec2 instance, elastic ip, keypair, etc. 
 
 ## Init
 
