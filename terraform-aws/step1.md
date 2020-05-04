@@ -31,14 +31,17 @@ Visit this URL to view the default localstack web page which is now live:
 Alternatively, you can examine resource list.
 
 Inspect Terraform state or plan
+
 `terraform show`{{execute}}
 
 `terraform state list`{{execute}}
 
 Read an output from a state file
+
 `terraform output`{{execute}}
 
 Read state file
+
 `cat terraform.tfstate`{{execute}}
 
 ## Destroy
