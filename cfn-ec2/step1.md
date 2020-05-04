@@ -80,16 +80,6 @@ Confirm the setting in ec2 instance
 
 `aws ec2 describe-instances |jq .Reservations[].Instances[].InstanceType`{{execute}}
 
-## Update stack
-
-Now update instance type to t2.medium
-
-`aws cloudformation update-stack --stack-name my-stack --template-body file://EC2InstanceWithSecurityGroupSample.template --parameters ParameterKey=KeyName,ParameterValue=MyKeyPair ParameterKey=InstanceType,ParameterValue=t2.medium`{{execute}}
-
-## Verify
-
-`aws ec2 describe-instances |jq .Reservations[].Instances[].InstanceType`{{execute}}
-
 ## Delete stack
 
 To remove the stack, run the delete-stack command.
