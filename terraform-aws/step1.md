@@ -28,11 +28,7 @@ You will be asked to confirm. Type `yes` and press `ENTER`. It may take up to 30
 
 ## Verify
 
-Visit this URL to view the default localstack web page which is now live:
-
-- [Nginx index page](https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/)
-
-Alternatively, you can examine resource list.
+You can examine resource list.
 
 Inspect Terraform state or plan
 
