@@ -32,13 +32,15 @@ There is list of workspace names, a star (*) in front of `prod` workspace.
 
 ## Dry run
 
-`TF_VAR_name="demo-prod" terraform plan`{{execute}}
+`terraform plan`{{execute}}
+
+Notice the resource name changed to `demo-prod`
 
 ## Apply
 
 Now provision the webserver by running `apply`.
 
-`TF_VAR_name="demo-prod" terraform apply`{{execute}}
+`terraform apply`{{execute}}
 
 You will be asked to confirm. Type `yes` and press `ENTER`. It may take up to 30 seconds. A message will display confirmation that it succeeded.
 

@@ -6,7 +6,8 @@
   "details": {
     "intro": {
       "text": "intro.md",
-      "code": "courseBase.sh",
+      "courseData": "background.sh",
+      "code": "foreground.sh",
       "credits": "https://www.katacoda.com/ahead"
     },
     "steps": [
@@ -16,6 +17,8 @@
       },
       {
         "title": "Advanced Terraform",
+        "courseData": "step2-background.sh",
+        "code": "step2-foreground.sh",
         "text": "step2.md"
       }
     ],
@@ -40,6 +43,10 @@
         {
           "file": "credentials",
           "target": "~/.aws"
+        },
+        {
+          "file": "step2-main.tf",
+          "target": "/var/tmp"
         }
       ]
     }
@@ -49,7 +56,7 @@
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands version 0.1.\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "ubuntu:2004",
+    "imageid": "ubuntu",
     "showdashboard": true,
     "dashboards": [
       {

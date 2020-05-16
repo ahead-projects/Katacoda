@@ -29,3 +29,6 @@ pip install awscli-plugin-endpoint
 mkdir -p ~/.aws
 mkdir -p ~/terraform-aws-demo
 cd ~/terraform-aws-demo
+
+echo "done" >> /opt/.backgroundfinished
+
