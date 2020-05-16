@@ -26,6 +26,11 @@
       "title": "Packer Tutorial",
       "description": "Packer Tutorial",
       "id": "packer"
-    }
+    },
+    {
+      "title": "quiz (demo only)",
+      "description": "",
+      "id": "quiz"
+    },
   ]
 }
