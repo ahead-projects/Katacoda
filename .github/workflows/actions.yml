@@ -16,3 +16,7 @@ jobs:
       name: Validate Katacoda scenarios
       run: |
         katacoda validate:all --repo ${{ github.workspace }}
+    - id: validate
+      name: Validate json files
+      run: |
+        python json-validate.py
