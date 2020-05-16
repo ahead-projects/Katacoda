@@ -12,11 +12,11 @@ jobs:
       name: Install Katacoda CLI
       run: |
         sudo npm i katacoda-cli --global
-    - id: validate
+    - id: katacoda-validate
       name: Validate Katacoda scenarios
       run: |
         katacoda validate:all --repo ${{ github.workspace }}
-    - id: validate
+    - id: json-validate
       name: Validate json files
       run: |
         python json-validate.py
