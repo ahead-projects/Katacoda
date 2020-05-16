@@ -1,0 +1,9 @@
+{
+  "courses": [
+    {
+      "title": "HashiCorp Vault Courses",
+      "description": "Courses for HashiCorp Vault",
+      "id": "vault"
+    }
+  ]
+}
