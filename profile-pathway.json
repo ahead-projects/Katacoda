@@ -21,6 +21,11 @@
       "title": "Terraform manages docker",
       "description": "Manage docker with terraform",
       "id": "terraform-docker"
+    },
+    {
+      "title": "Packer Tutorial",
+      "description": "Packer Tutorial",
+      "id": "packer"
     }
   ]
 }
