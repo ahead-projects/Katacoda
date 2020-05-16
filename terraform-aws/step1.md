@@ -1,4 +1,4 @@
-A Terraform configuration is a series of code blocks that define your intended infrastructure. You'll run the `terraform` command against this file to create an Nginx webserver and view the default Nginx web page.
+A Terraform configuration is a series of code blocks that define your intended infrastructure.
 
 ## View code
 

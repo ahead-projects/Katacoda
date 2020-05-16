@@ -1,4 +1,4 @@
-A Terraform configuration is a series of code blocks that define your intended infrastructure. You'll run the `terraform` command against this file to create an Nginx webserver and view the default Nginx web page.
+A Terraform configuration is a series of code blocks that define your intended infrastructure.
 
 ## View code
 
@@ -24,11 +24,11 @@ All Terraform workflows start with the `init` command. Terraform searches the co
 
 `terraform workspace new prod`{{execute}}
 
-A new workspace `prod` is created and terraform automatically switch to it directly. 
+A new workspace `prod` is created and switched
 
 `terraform workspace list`{{execute}}
 
-Notes, there is list of workspace names, and a star (*) in front of `prod` workspace. 
+There is list of workspace names, a star (*) in front of `prod` workspace. 
 
 ## Dry run
 
@@ -38,7 +38,7 @@ Notes, there is list of workspace names, and a star (*) in front of `prod` works
 
 Now provision the webserver by running `apply`.
 
-`TF_VAR_name="demo-dev" terraform apply`{{execute}}
+`TF_VAR_name="demo-prod" terraform apply`{{execute}}
 
 You will be asked to confirm. Type `yes` and press `ENTER`. It may take up to 30 seconds. A message will display confirmation that it succeeded.
 
