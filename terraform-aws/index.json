@@ -13,6 +13,10 @@
       {
         "title": "Terraform in 60 Seconds",
         "text": "step1.md"
+      },
+      {
+        "title": "Advanced Terraform",
+        "text": "step2.md"
       }
     ],
     "finish": {
