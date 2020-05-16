@@ -7,14 +7,9 @@
     }
   ],
   "scenarios": [
-    {
-      "title": "Terraform in 60 minutes",
-      "description": "Learn terraform in 60 minutes",
       "id": "terraform-aws"
     },
     {
-      "title": "AWS Cloudformation in 60 miniutes",
-      "description": "Learn AWS Cloudformation in 60 minutes",
       "id": "cfn-ec2"
     }
   ]
