@@ -30,5 +30,7 @@ mkdir -p ~/.aws
 mkdir -p ~/terraform-aws-demo
 cd ~/terraform-aws-demo
 
+cp /var/tmp/main.tf ~/terraform-aws-demo/main.tf
+
 echo "done" >> /opt/.backgroundfinished
 

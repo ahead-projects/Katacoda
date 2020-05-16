@@ -30,7 +30,7 @@
       "host01": [
         {
           "file": "main.tf",
-          "target": "~/terraform-aws-demo"
+          "target": "/var/tmp"
         },
         {
           "file": "provider.tf",
