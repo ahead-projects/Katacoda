@@ -11,6 +11,9 @@
     },
     {
       "id": "cfn-ec2"
-    }
+    },
+    {
+      "id": "terraform-docker"
+    },
   ]
 }
