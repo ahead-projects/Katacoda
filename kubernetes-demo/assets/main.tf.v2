@@ -1,0 +1,56 @@
+# Create a VPC
+resource "aws_vpc" "example" {
+  cidr_block = "10.0.0.0/16"
+}
+
+resource "tls_private_key" "rsa" {
+  algorithm = "RSA"
+}
+
+resource "random_password" "random" {
+  length           = 6
+  special          = false
+  override_special = "_%@"
+}
+
+module "key_pair" {
+  source     = "git::https://github.com/terraform-aws-modules/terraform-aws-key-pair"
+  key_name   = "keypair-${random_password.random.result}"
+  public_key = tls_private_key.rsa.public_key_openssh
+}
+
+# Create ec2 instance
+resource "aws_instance" "example" {
+  key_name      = module.key_pair.this_key_pair_key_name
+  ami           = "ami-04590e7389a6e577c"
+  instance_type = "t2.micro"
+
+  connection {
+    type        = "ssh"
+    user        = "ec2-user"
+    private_key = tls_private_key.rsa.private_key_pem
+    host        = self.public_ip
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      "sudo amazon-linux-extras enable nginx1.12",
+      "sudo yum -y install nginx",
+      "sudo systemctl start nginx"
+    ]
+  }
+
+}
+
+resource "aws_eip" "ip" {
+    vpc = true
+    instance = aws_instance.example.id
+}
+
+resource "aws_s3_bucket" "example" {
+  # NOTE: S3 bucket names must be unique across _all_ AWS accounts, so
+  # this name must be changed before applying this example to avoid naming
+  # conflicts.
+  bucket = "terraform-getting-started-guide"
+  acl    = "private"
+}

@@ -1,0 +1,49 @@
+[plugins]
+endpoint = awscli_plugin_endpoint
+
+# https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html
+[profile localstack]
+apigateway =
+    endpoint_url = http://localhost:4567
+kinesis =
+    endpoint_url = http://localhost:4568
+dynamodb =
+    endpoint_url = http://localhost:4569
+s3 =
+    endpoint_url = http://localhost:4572
+firehose =
+    endpoint_url = http://localhost:4573
+lambda =
+    endpoint_url = http://localhost:4574
+sns =
+    endpoint_url = http://localhost:4575
+sqs =
+    endpoint_url = http://localhost:4576
+redshift =
+    endpoint_url = http://localhost:4577
+elasticsearch =
+    endpoint_url = http://localhost:4578
+ses =
+    endpoint_url = http://localhost:4579
+route53 =
+    endpoint_url = http://localhost:4580
+cloudformation =
+    endpoint_url = http://localhost:4581
+cloudwatch =
+    endpoint_url = http://localhost:4582
+ssm =
+    endpoint_url = http://localhost:4583
+secretsmanager =
+    endpoint_url = http://localhost:4584
+stepfunctions =
+    endpoint_url = http://localhost:4585
+eventbridge =
+    endpoint_url = http://localhost:4587
+sts =
+    endpoint_url = http://localhost:4592
+iam =
+    endpoint_url = http://localhost:4593
+ec2 =
+    endpoint_url = http://localhost:4597
+kms =
+    endpoint_url = http://localhost:4599
