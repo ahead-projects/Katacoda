@@ -1,41 +1,9 @@
 {
-  "courses": [
-    {
-      "title": "HashiCorp Vault Courses(coming soon)",
-      "description": "Courses for HashiCorp Vault",
-      "id": "vault"
-    }
-  ],
   "scenarios": [
     {
       "title": "Terraform Tutorial on AWS (emulated with localstack)",
       "description": "Terraform Tutorial on AWS (emulated with localstack)",
       "id": "terraform-aws"
-    },
-    {
-      "title": "Cloudformation Tutorial on AWS (emulated with localstack)",
-      "description": "Cloudformation Tutorial on AWS (emulated with localstack)",
-      "id": "cfn-ec2"
-    },
-    {
-      "title": "Terraform manages docker",
-      "description": "Manage docker with terraform",
-      "id": "terraform-docker"
-    },
-    {
-      "title": "Packer Tutorial",
-      "description": "Packer Tutorial",
-      "id": "packer"
-    },
-    {
-      "title": "quiz (demo only)",
-      "description": "",
-      "id": "quiz"
-    },
-    {
-      "title": "Kubernetes Tutorial",
-      "description": "",
-      "id": "kubernetes-demo"
     }
   ]
 }
